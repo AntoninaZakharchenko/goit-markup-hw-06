@@ -696,7 +696,7 @@ margin-left: 10px;}
     border-radius: 4px;
     border: 1px solid #2196F3;
     }
-.modal-input:hover, .modal-input:focus + .input-icon {
+.modal-input:hover + .input-icon, .modal-input:focus + .input-icon {
     fill: var(--nav-color);
 }
 .modal-input::placeholder {
@@ -710,12 +710,12 @@ margin-left: 10px;}
 .input-wrapper {
     position: relative;   
     margin-top: 4px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .modal-textarea {
     margin-bottom: 20px;
     margin-top: 4px; }
-.input-wrapper:hover, .input-wrapper:hover, 
 
 .input-icon {
     position: absolute;
